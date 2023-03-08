@@ -1,5 +1,5 @@
 {
-	"name": "result-summary-component",
+	"name": "product-preview-card-component",
 	"version": "1.0.0",
 	"description": "",
 	"main": "gulpfile.js",
@@ -8,14 +8,14 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/belie369/frontend-mentor-result-summary-component.git"
+		"url": "git+https://github.com/belie369/frontend-mentor-product-preview-card-component.git"
 	},
 	"author": "belie <katarzyna.derbich@gmail.com>",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/belie369/frontend-mentor-result-summary-component/issues"
+		"url": "https://github.com/belie369/frontend-mentor-product-preview-card-component/issues"
 	},
-	"homepage": "https://github.com/belie369/frontend-mentor-result-summary-component#readme",
+	"homepage": "https://github.com/belie369/frontend-mentor-product-preview-card-component#readme",
 	"devDependencies": {
 		"@babel/core": "^7.18.5",
 		"@babel/preset-env": "^7.18.2",
