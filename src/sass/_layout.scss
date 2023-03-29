@@ -1,0 +1,19 @@
+@use './base' as b;
+
+.wrapper {
+	@include b.respond(large) {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+	}
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+
+	@include b.respond(large) {
+		flex-direction: row;
+	}
+}
