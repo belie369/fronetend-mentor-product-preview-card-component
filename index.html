@@ -19,13 +19,15 @@
     <div class="wrapper">
       <article class="card">
         <div class="card__image-container">
-          <img srcset="./dist/img/image-product-mobile.jpg 686w, ./dist/img/image-product-desktop.jpg 600w" sizes="(max-width: 768px) 640px,
-                    300px" src="./dist/img/image-product-desktop.jpg" alt="Zdjęcie kamienia na wodzie z drzewem" />
+          <picture class="card__img">
+            <source media="(max-width:768px)" srcset="./dist/img/image-product-mobile.jpg">
+            <img src="./dist/img/image-product-desktop.jpg" alt="Gabrielle Parfum" class="img">
+          </picture>
         </div>
         <div class="card__details">
-          <h2 class="card__heading-2">Perfume</h2>
+          <h2 class="card__category">Perfume</h2>
 
-          <h1 class="card__heading-1">Gabrielle Essence Eau De Parfum</h1>
+          <h1 class="card__title">Gabrielle Essence Eau De Parfum</h1>
 
           <p class="card__description">A floral, solar and voluptuous interpretation composed by Olivier Polge,
             Perfumer-Creator for the House of
