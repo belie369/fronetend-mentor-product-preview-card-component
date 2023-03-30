@@ -1,0 +1,35 @@
+@use './base' as b;
+
+.card {
+	display: flex;
+	flex-direction: column;
+	margin-top: 2.8rem;
+	max-width: 92vw;
+	border-radius: 1rem;
+
+	@include b.respond(medium) {
+		flex-direction: row;
+		max-width: 60rem;
+		max-height: 45rem;
+	}
+
+	&__image-container {
+		@include b.respond(medium) {
+			flex-basis: 50%;
+		}
+	}
+
+	&__details {
+		background-color: b.$white;
+
+		@include b.respond(medium) {
+			flex-basis: 50%;
+		}
+	}
+
+	&__img {
+		height: 100%;
+		object-fit: cover;
+		overflow: hidden;
+	}
+}

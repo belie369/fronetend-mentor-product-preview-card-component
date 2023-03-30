@@ -23,6 +23,13 @@ $very-dark-blue: hsl(212, 21%, 14%);
 $dark-grayish-blue: hsl(228, 12%, 48%);
 $white: hsl(0, 0%, 100%);
 
+// fonts manager
+$font-basic: 'Montserrat', sans-serif;
+$font-accent: 'Fraunces', serif;
+
+$font-regular: 500;
+$font-bold: 700;
+
 *,
 *::before,
 *::after {
@@ -37,7 +44,40 @@ html {
 }
 
 body {
-	// font-family: 'Fraunces', serif;
-	font-family: 'Montserrat', sans-serif;
+	background-color: $cream;
+	font-family: $font-basic;
 	font-size: 1.4rem;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+button {
+	font: inherit;
+	border: none;
+	cursor: pointer;
+}
+
+a {
+	color: $dark-cyan;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	transition: border-color 0.3s;
+
+	&:hover {
+		border-color: $dark-grayish-blue;
+	}
 }
