@@ -49,6 +49,7 @@ body {
 	font-family: $font-basic;
 	font-size: 1.4rem;
 	font-weight: $font-regular;
+	-webkit-font-smoothing: antialiased;
 }
 
 p,

@@ -24,6 +24,7 @@
 	}
 
 	&__details {
+		padding: 2.6rem 2.45rem 2.4rem;
 		background-color: b.$white;
 
 		@include b.respond(medium) {
@@ -34,10 +35,6 @@
 	&__img {
 		height: 100%;
 		object-fit: cover;
-		overflow: hidden;
-	}
-
-	img {
 		overflow: hidden;
 	}
 
