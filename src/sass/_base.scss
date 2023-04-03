@@ -16,6 +16,7 @@
 // colors manager
 // primary colors
 $dark-cyan: hsl(158, 36%, 37%);
+$dark-cyan-2: hsl(156, 59%, 25%);
 $cream: hsl(30, 38%, 92%);
 
 // neutral colors
@@ -79,6 +80,7 @@ a {
 .btn {
 	font: inherit;
 	border: none;
+	text-decoration: none;
 	cursor: pointer;
 }
 
