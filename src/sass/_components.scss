@@ -10,6 +10,7 @@
 
 	@include b.respond(medium) {
 		flex-direction: row;
+		margin: auto;
 		max-width: 60rem;
 		max-height: 45rem;
 	}
@@ -23,7 +24,15 @@
 		}
 	}
 
+	&__img {
+		height: 100%;
+		object-fit: cover;
+		overflow: hidden;
+	}
+
 	&__details {
+		display: grid;
+		gap: 1.2rem;
 		padding: 2.6rem 2.45rem 2.4rem;
 		background-color: b.$white;
 
@@ -32,15 +41,44 @@
 		}
 	}
 
-	&__img {
-		height: 100%;
-		object-fit: cover;
-		overflow: hidden;
+	&__category {
+		font-size: 1.2rem;
+		font-weight: 500;
+		letter-spacing: 0.3rem;
+		text-transform: uppercase;
+	}
+
+	&__title {
+		color: b.$very-dark-blue;
+		font-size: 3.2rem;
+		font-family: b.$font-accent;
+		font-weight: 700;
+		line-height: 1;
+	}
+
+	&__description {
+		line-height: 1.6;
 	}
 
 	&__price-box {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 1.5rem;
+		align-items: center;
+		gap: 1.6rem;
+
+		margin: 1rem 0 0.8rem;
+	}
+
+	&__price {
+		&--actual {
+			color: b.$dark-cyan;
+			font-family: b.$font-accent;
+			font-size: 3.2rem;
+			font-weight: 700;
+		}
+
+		&--previous {
+			text-decoration: line-through;
+		}
 	}
 }

@@ -27,9 +27,6 @@ $white: hsl(0, 0%, 100%);
 $font-basic: 'Montserrat', sans-serif;
 $font-accent: 'Fraunces', serif;
 
-$font-regular: 500;
-$font-bold: 700;
-
 *,
 *::before,
 *::after {
@@ -48,7 +45,7 @@ body {
 	color: $dark-grayish-blue;
 	font-family: $font-basic;
 	font-size: 1.4rem;
-	font-weight: $font-regular;
+	font-weight: 500;
 	-webkit-font-smoothing: antialiased;
 }
 
