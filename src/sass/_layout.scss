@@ -4,17 +4,12 @@
 	display: flex;
 	justify-content: center;
 
-	@include b.respond(medium) {
+	@include b.respond(large) {
 		align-items: center;
 		height: calc(100vh - 3vh);
 	}
 }
 
 .footer {
-	padding: 3em 1em;
-	// position: relative;
-	// // bottom: 1rem;
-	// // height: 3vh;
-	// font-size: 1.4rem;
-	// z-index: -10;
+	padding: 0.5em;
 }

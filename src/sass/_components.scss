@@ -3,17 +3,17 @@
 .card {
 	display: flex;
 	flex-direction: column;
-	margin-top: 2.8rem;
+	margin: 2.8rem 0 2.8rem;
 	max-width: 92vw;
-	max-height: 61rem;
+	min-height: 61rem;
 	border-radius: 0.9rem;
 	overflow: hidden;
 
 	@include b.respond(medium) {
 		flex-direction: row;
-		margin: auto;
+		margin: 3.2rem 0;
 		max-width: 60rem;
-		max-height: 45rem;
+		min-height: 45rem;
 	}
 
 	&__image-container {
@@ -77,7 +77,7 @@
 		align-items: center;
 		gap: 1.6rem;
 
-		margin: 1rem 0 0.7rem;
+		margin: 1.2rem 0 0.7rem;
 
 		@include b.respond(medium) {
 			margin: 0 0 1.2rem;
@@ -101,7 +101,7 @@
 		display: inline-flex;
 		justify-content: center;
 		align-items: center;
-		gap: 0.3rem;
+		gap: 1rem;
 
 		padding: 1.5rem 1.6rem;
 		width: 100%;
@@ -118,6 +118,13 @@
 		&:hover,
 		&:focus {
 			background-color: b.$dark-cyan-2;
+		}
+
+		&[data-icon='shopping-cart']::before {
+			content: '';
+			background-image: url('../../dist/img/icon-cart.svg');
+			width: 1.5rem;
+			height: 1.6rem;
 		}
 	}
 }
